@@ -1,7 +1,36 @@
 <header>
-	
+	<style type="text/css">
+nav{
+  box-shadow: 1px 5px 10px #ccccb3;
+}
+.navbar .collapse .navbar-nav li a{
+  color: #8a8a5c;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: "Tangerine", serif;
+
+}
+.navbar .collapse .navbar-nav li a:hover{
+  color: #009933;
+  font-size: 105%;
+  font-weight: bold;
+  font-family: "Tangerine", serif;
+}
+.navbar .collapse .navbar-nav li a:active{
+  color: #cccc00;
+  font-size: 130%;
+  font-weight: bold;
+}
+.slider{
+  width: 100%;
+  overflow: hidden;
+}
+.img-fluid{
+  border-radius: 5px;
+} 
+  </style>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(255, 255, 255, 0.3)" >
-  <a class="navbar-brand" href="/">HOME</a>
+  <a class="navbar-brand" href="{!! url('/'); !!}" style="font-family: 'Tangerine', serif;color: #009933;">HOME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,7 +38,7 @@
     <ul class="navbar-nav">
 
       <li class="nav-item ">
-        <a class="nav-link" href="form.php"> Registration  </a>
+        <a class="nav-link" href="{!! url('/online_application'); !!}"> Online Application  </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="update.php">Update </a>

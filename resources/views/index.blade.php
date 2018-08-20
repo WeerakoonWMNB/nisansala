@@ -5,7 +5,7 @@
 @endsection
 
 @section('csslink')
-<link rel='stylesheet' href='/css/indexcss.css'/>
+<link rel='stylesheet' href='{{asset('/css/indexcss.css')}}'/>
 @endsection
 
 @section('content')
@@ -150,4 +150,9 @@
         </div>
     </div>
   </div>
+  <div class="row">
+            <div class="col-md-12" >
+     <center> Website is Designed and Developed by WeerakoonNB-SUSL Copyright © All Rights Reserved.</center>
+       </div>
+       </div> 
 @endsection

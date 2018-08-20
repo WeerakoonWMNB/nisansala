@@ -1,29 +1,4 @@
-nav{
-	box-shadow: 1px 5px 10px #006600;
-}
-.navbar .collapse .navbar-nav li a{
-	color: #009933;
-	font-size: 110%;
-	font-weight: bold;
 
-}
-.navbar .collapse .navbar-nav li a:hover{
-	color: #009933;
-	font-size: 120%;
-	font-weight: bold;
-}
-.navbar .collapse .navbar-nav li a:active{
-	color: #cccc00;
-	font-size: 130%;
-	font-weight: bold;
-}
-.slider{
-	width: 100%;
-	overflow: hidden;
-}
-.img-fluid{
-	border-radius: 5px;
-}
 #contact,#vision,#mission,#news{
 	border: 1px solid #ccc;
 	border-radius: 8px;

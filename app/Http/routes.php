@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/online_application', function () {
+    return view('online_application');
+});
