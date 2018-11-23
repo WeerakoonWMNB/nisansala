@@ -41,13 +41,13 @@ nav{
         <a class="nav-link" href="{!! url('/online_application'); !!}"> Online Application  </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="update.php">Gallery </a>
+        <a class="nav-link" href="{!! url('/gallery'); !!}">Gallery </a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link" href="update.php">About US </a>
+        <a class="nav-link" href="{!! url('/aboutus'); !!}">About US </a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link" href="update.php">Contact US </a>
+        <a class="nav-link" href="{!! url('/contactus'); !!}">Contact US </a>
       </li> 
     </ul>
   </div>

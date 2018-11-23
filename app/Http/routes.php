@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,9 +10,8 @@
 |
 */
 //view home page
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/home','siteController@index');
 
 //view application form
 Route::get('/online_application', function () {
@@ -22,3 +20,30 @@ Route::get('/online_application', function () {
 
 //application form submit
 Route::post('/applicationPost','siteController@applicationpost');
+
+Route::auth();
+
+Route::get('/', 'HomeController@index');
+Route::post('form','imageController@fileUpload');
+Route::post('photoform','imageController@photofileUpload');
+Route::delete('image-gallery/{id}', 'imageController@destroy');
+Route::post('addNews', 'newsController@addNews');
+Route::delete('newsDelete/{id}', 'newsController@destroy');
+Route::post('newsUpdate/{id}', 'newsController@update');
+
+Route::delete('applicationDelete/{id}', 'siteController@destroy');
+Route::post('/detailreport/{id}', 'reportController@appl');
+
+Route::post('/changePassword','changepassController@changePassword')->name('changePassword');
+
+Route::get('/gallery', 'HomeController@gallery');
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+
+Route::post('/feedback', 'HomeController@feedback');
+Route::get('mail', 'HomeController@mail');

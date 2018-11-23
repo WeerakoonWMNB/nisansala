@@ -122,7 +122,15 @@
     <div class="col-md-3 order-sm-3">
     <div id="news"><br>
                 <center><h5> <b>NEWS</b> </h5></center>
-                
+                <table class="table">
+                    <thead>
+                      @foreach ($news as $news)
+                      <tr>
+                        <th scope="col" style="text-align: left;">{{$news->news}}</th>
+                      </tr>
+                      @endforeach
+                    </thead>
+                </table>
                 </div>
   </div>
 </div>
